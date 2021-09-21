@@ -7,7 +7,13 @@
 */
 
 //CODE HERE
+let lovesCode = true
 
+if(lovesCode === true){
+  console.log('I Love to code!')
+} else {
+  console.log('Coding has its challenges')
+}
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
 var brittanisAge = 34
@@ -21,7 +27,13 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysAge >= brittanisAge) {
+  console.log ("Amy is older than Brittani")
+} else if (amysAge <= brittanisAge) {
+  console.log ("Brittani is older than Amy")
+  } else {
+  console.log ("They're the same age")
+ }
 
 ////////// PROBLEM 3 //////////
 
@@ -30,7 +42,11 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysBirthYear === brittanisBirthYear) {
+  console.log ("Amy & Brittani are born in the same year")
+} else { 
+  console.log ("Amy & Brittani are not born in the same year")
+}
 
 
 // For problems 4-5 use the following lines of code:
@@ -42,12 +58,15 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
+var firstItem = 0
+console.log (arr[firstItem])
 
 ////////// PROBLEM 5 //////////
 /*
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
+var lastItemRemoved = arr.pop() 
+console.log (arr)
 
 //Code Here
 
@@ -62,7 +81,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for (let i = 0; i < 5; i++){
+  console.log(family[i])
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -77,6 +98,13 @@ let evensArr = []
 */
 
 //Code Here
+  for ( let i = 0; i < nums.length; i++) {
+
+    if (nums[i] % 2 === 0) {
+      evensArr.push(nums[i]);
+      console.log(evensArr);
+    }
+  }
 
 
 
@@ -91,6 +119,18 @@ var score = 74
 */
 
 //Code Here
+if (score >= 90) {
+  console.log("A")
+}else if (score > 80 || score === 89){
+  console.log("B")
+}else if (score > 70 || score === 79){
+  console.log("C")
+}else if (score > 60 || score === 69){
+  console.log("D")
+}else {
+  console.log("F")
+}
+
 
 
 ////////// Intermediate Problems //////////
@@ -103,7 +143,7 @@ var score = 74
 */
 
 //CODE HERE
-
+var changeMyMind = true
 
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
