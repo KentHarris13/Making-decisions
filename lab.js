@@ -145,7 +145,15 @@ if (score >= 90) {
 //CODE HERE
 var changeMyMind = true
 
-// Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
+if (changeMyMind === true){
+  console.log("False")
+} else if (changeMyMind === false){
+  console.log("True")
+}
+
+
+
+//h Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
 
@@ -203,10 +211,15 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-for (let i = 0; i > nums.length; i++){
-  letters.pop(nums[i]);
-  console.log(letters)
-}
+  for (let i = 0; i < nums.length; i++){
+    if ( nums[i])
+  }
+
+
+  // for (let i = 0; i > nums.length; i++){
+//   letters.pop(nums[i]);
+//   console.log(letters)
+// }
 
 ////////// Advanced Problems //////////
 
